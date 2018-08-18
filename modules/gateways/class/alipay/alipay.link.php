@@ -59,7 +59,7 @@ class alipay_link {
 
 		if($result['msg'] && $result['msg']=='Success'){
 			$url = 'https://www.kuaizhan.com/common/encode-png?large=true&data='.$result['qr_code'];
-			return "<a href='{$result['qr_code']}'><img src='{$url}' style='width:180px;'><br>请打开支付宝扫码";
+			return "<a href='{$result['qr_code']}'><img src='{$url}' style='width:180px;'><br>请打开支付宝扫码</a>";
 		}else{
 			return $result['msg'].' : '.$result['sub_msg'];
 		}	
